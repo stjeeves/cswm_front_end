@@ -1,9 +1,14 @@
 import React from 'react';
-import Host from './Host';
-import { View, Text, FlatList, SafeAreaView } from 'react-native';
+import { View, Text, FlatList, SafeAreaView, TouchableOpacity } from 'react-native';
 import Card from '../../shared/card';
+import Navigator from '../../routes/homeStack';
+import { useNavigation } from '@react-navigation/native';
 
 const HostList = (props) => {
+
+
+    // const navigation = useNavigation();
+    // const { navigate } = props.navigation
 
     if (!props.hosts) {
         console.log(props.hosts)
@@ -11,20 +16,21 @@ const HostList = (props) => {
     }
 
     return (
-        <SafeAreaView>
-            <FlatList data={props.hosts}
-                renderItem={({ item }) =>
-
-                    <View style={{ backgroundColor: 'gold' }}>
-                        <Card>
-                            <Text>{item.firstName}</Text>
-                            <Text>{item.lastName}</Text>
-                        </Card>
-                    </View>
-                } />
-        </SafeAreaView>
-
-    )
+        <View style={{backgroundColor: '#EEBB10'}}>
+            <FlatList 
+                data={props.hosts}
+                renderItem={({ item }) => <TouchableOpacity onPress={() => 
+                    Navigator.navigate('hostDetails', {item})}>
+                    <Card>
+                        <Text>{item.firstName}</Text>
+                        <Text>{item.lastName}</Text> 
+                        <Text>{item.tagline}</Text>
+                        <Text>{item.rating}</Text>
+                    </Card>
+                </TouchableOpacity>}     
+                  />
+        </View> 
+    );
 }
 
 
