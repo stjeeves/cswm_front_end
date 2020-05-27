@@ -3,6 +3,7 @@ import React from 'react';
 import HostContainer from './HostContainer';
 import { View } from 'react-native';
 // import Host from '../components/hosts/Host';
+// import Navigator from './routes/homeStack';
 
 const MainContainer = () => {
 
@@ -11,7 +12,8 @@ const MainContainer = () => {
 
         <View>
 
-            <HostContainer />
+            {/* <HostContainer /> */}
+            <Navigator/>
 
         </View>
     )

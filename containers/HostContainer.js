@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HostList from '../components/hosts/HostList.js';
 import { View } from 'react-native';
+// import Navigator from './routes/homeStack';
 
 class HostContainer extends Component {
     constructor(props) {
@@ -30,6 +31,7 @@ class HostContainer extends Component {
                     return <HostList hosts={this.state.hosts} />
                 }} /> */}
                 <HostList hosts={this.state.hosts}/>
+               
             </View>
             //     </Switch>
             // </Router>
