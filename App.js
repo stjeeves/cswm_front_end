@@ -8,8 +8,13 @@ import PrefSlider from './components/PrefSlider.js';
 import { View, StyleSheet, Text } from 'react-native';
 import MainContainer from './containers/MainContainer';
 import HostContainer from './containers/HostContainer';
+import { createStackNavigator } from 'react-navigation-stack';
 
-export default function App() {
+
+const App = (props) => {
+
+
+	
 	return (
 		<View>
 			<HostContainer />
@@ -23,3 +28,4 @@ export default function App() {
 // // 		// backgroundColor: '#252422'
 // // 	}
 // });
+export default App;

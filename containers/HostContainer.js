@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HostList from '../components/hosts/HostList.js';
-import { View } from 'react-native';
+import { View, FlatList, TouchableOpacity, Text} from 'react-native';
+import Card from '../shared/card';
 // import Navigator from './routes/homeStack';
 
 class HostContainer extends Component {
@@ -24,18 +23,21 @@ class HostContainer extends Component {
 
     render() {
         return (
-            // <Router>
-            //     <Switch>
-            <View>
-                {/* <Route render={(props) => {
-                    return <HostList hosts={this.state.hosts} />
-                }} /> */}
-                <HostList hosts={this.state.hosts}/>
-               
-            </View>
-            //     </Switch>
-            // </Router>
-        )
+            <View style={{ backgroundColor: '#EEBB10' }}>
+                <FlatList
+                    data={this.state.hosts}
+                    renderItem={({ item }) => <TouchableOpacity onPress={() =>
+                        this.props.navigation.navigate('hostDetails', { item })}>
+                        <Card>
+                            <Text>{item.firstName}</Text>
+                            <Text>{item.lastName}</Text>
+                            <Text>{item.tagline}</Text>
+                            <Text>{item.rating}</Text>
+                            </Card>
+                        </TouchableOpacity>}
+                    />
+                </View>
+        );
     }
 }
 
