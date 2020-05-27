@@ -11,8 +11,8 @@ import HostContainer from './containers/HostContainer';
 
 export default function App() {
 	return (
-		<View>
-			<HostContainer />
+		<View style={{flex: 1}}>
+			<WelcomeScreen />
 		</View>
 	);
 }
