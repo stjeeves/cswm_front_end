@@ -29,16 +29,15 @@ const styles = StyleSheet.create({
     header: {
         fontSize: 32,
         color: "#EEBB10",
-    
         paddingBottom: 10,
         marginBottom: 40,
-        borderBottomColor: "#fff",
+        borderBottomColor: "#EEBB10",
         borderBottomWidth: 1,
     },
     opener:{
 
         fontWeight: "bold",
-        alignSelf:"stretch",
+        alignSelf: "stretch",
         alignContent:"center",
     },
     textinput:{

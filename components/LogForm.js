@@ -40,8 +40,9 @@ const styles = StyleSheet.create({
         height: 40,
         marginBottom: 30,
         color: "#fff",
-        borderBottomColor: "#fff",
+        borderBottomColor: "#EEBB10",
         borderBottomWidth: 1,
+        fontSize: 20
     },
     button:{
         alignSelf: "stretch",
@@ -53,5 +54,6 @@ const styles = StyleSheet.create({
     btntext:{
         color: "#fff",
         fontWeight: "bold",
+        fontSize: 32
     }
 })
