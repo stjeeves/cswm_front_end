@@ -12,7 +12,6 @@ import HostContainer from './containers/HostContainer';
 export default function App() {
 	return (
 		<View>
-			<Text>CSWM</Text>
 			<HostContainer />
 		</View>
 	);

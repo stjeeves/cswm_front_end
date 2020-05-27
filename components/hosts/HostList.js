@@ -14,7 +14,7 @@ const HostList = (props) => {
         <SafeAreaView>
             <FlatList data={props.hosts}
                 renderItem={({ item }) =>
-                
+
                     <View style={{ backgroundColor: 'gold' }}>
                         <Card>
                             <Text>{item.firstName}</Text>
