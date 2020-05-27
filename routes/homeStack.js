@@ -1,6 +1,6 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
-import HostDetails from '../screens/hostDetails';
+import HostDetails from '../screens/HostDetails';
 import Home from '../screens/home';
 
 // npm install react navigation-stack
