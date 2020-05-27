@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import HostList from '../components/hosts/HostList.js';
-import { View } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 class HostContainer extends Component {
     constructor(props) {
@@ -36,5 +36,11 @@ class HostContainer extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+    }
+})
 
 export default HostContainer;
