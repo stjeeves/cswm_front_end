@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#252422"
     },
     header: {
-        fontSize: 24,
+        fontSize: 32,
         color: "#EEBB10",
     
         paddingBottom: 10,
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
         color: "#fff",
         borderBottomColor: "#fff",
         borderBottomWidth: 1,
+        fontSize: 20
     },
     button:{
         alignSelf: "stretch",
@@ -59,5 +60,6 @@ const styles = StyleSheet.create({
     btntext:{
         color: "#fff",
         fontWeight: "bold",
+        fontSize: 32
     }
 })
